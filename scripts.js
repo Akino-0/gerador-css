@@ -4,19 +4,6 @@ let botao;
 let blocoCodigo;
 let resultadoPreview;
 
-const sugestoesPrincipais = [
-    "bola azul quicando",
-    "botão hover",
-    "texto gradiente",
-    "gradiente fundo",
-    "sombra profunda",
-    "cartão moderno",
-    "efeito vidro",
-    "padrão xadrez",
-    "rotação infinita",
-    "cubo 3d"
-];
-
 // Biblioteca EXPANDIDA de estilos CSS predefinidos
 const estilosPredefinidos = {
     // ANIMAÇÕES BÁSICAS
@@ -25,7 +12,7 @@ const estilosPredefinidos = {
         css: `width: 50px; height: 50px; background: radial-gradient(circle at 30% 30%, #4a9eff, #0066cc); border-radius: 50%; animation: quicar 0.6s infinite; box-shadow: 0 10px 20px rgba(0, 102, 204, 0.4);`
     },
     "quadrado girando": {
-  descricao: "Quadrado azul que gira infinitamente",
+        descricao: "Quadrado azul que gira infinitamente",
         css: `width: 80px; height: 80px; background: linear-gradient(135deg, #0066cc, #4a9eff); animation: girar 2s infinite linear; box-shadow: 0 0 20px rgba(0, 102, 204, 0.6);`
     },
     "bola pulsante": {
@@ -322,8 +309,6 @@ document.addEventListener('DOMContentLoaded', function() {
         botao.addEventListener('click', gerarCSS);
     }
 
-    criarSugestoes();
-
     // Permitir gerar com Enter
     if (caixaTexto) {
         caixaTexto.addEventListener('keypress', function(event) {
@@ -333,23 +318,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-function criarChip(texto) {
-    const chip = document.createElement('button');
-    chip.type = 'button';
-    chip.className = 'chip-sugestao';
-    chip.textContent = texto;
-    chip.addEventListener('click', () => {
-        caixaTexto.value = texto;
-        gerarCSS();
-    });
-    return chip;
-}
-
-function criarSugestoes() {
-    const container = document.getElementById('sugestoes-chips');
-    if (!container) return;
-
-    sugestoesPrincipais.forEach(texto => container.appendChild(criarChip(texto)));
-    sugestoesPrincipais.forEach(texto => container.appendChild(criarChip(texto)));
-}
