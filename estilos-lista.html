@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estilos CSS - Referência Rápida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            background: #09090b;
+            color: #e4e4e7;
+            line-height: 1.8;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #22c55e;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #fafafa;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #22c55e;
+        }
+
+        .subtitle {
+            color: #71717a;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: #22c55e;
+            font-size: 28px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            border-bottom: 2px solid #27272a;
+            padding-bottom: 10px;
+        }
+
+        .secao {
+            background: #141419;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #27272a;
+            margin-bottom: 30px;
+        }
+
+        .estilo {
+            background: #1a1a1f;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #27272a;
+            border-left: 4px solid #22c55e;
+        }
+
+        .estilo h3 {
+            color: #4a9eff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .descricao {
+            color: #b4b4b8;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        code {
+            background: #09090b;
+            color: #34d399;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        .code-block {
+            background: #09090b;
+            color: #34d399;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border-left: 4px solid #22c55e;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .como-usar {
+            background: rgba(34, 197, 94, 0.05);
+            border-left: 4px solid #22c55e;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #a1f71a;
+        }
+
+        .botao-voltar {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #22c55e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .botao-voltar:hover {
+            background: #16a34a;
+        }
+
+        .categoria-titulo {
+            color: #fafafa;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid #4a9eff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .estilo {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="botao-voltar">← Voltar ao Gerador</a>
+
+    <header>
+        <h1>Lista de <span>Estilos CSS</span></h1>
+        <p class="subtitle">40+ estilos predefinidos com código pronto para usar</p>
+    </header>
+
+    <!-- CATEGORIA 1: ANIMAÇÕES BÁSICAS -->
+    <div class="secao">
+        <h2>⚡ Animações Básicas</h2>
+
+        <div class="categoria-titulo">1. Bola Azul Quicando</div>
+        <div class="estilo">
+            <h3>🔵 Bola Azul Quicando</h3>
+            <p class="descricao">Uma esfera azul que quica continuamente, perfeita para demonstrar animações verticais.</p>
+            <div class="code-block">width: 50px;
+height: 50px;
+background: radial-gradient(circle at 30% 30%, #4a9eff, #2563eb);
+border-radius: 50%;
+animation: quicar 0.8s infinite;
+box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+            </div>
+            <div class="como-usar">
+                💡 Teste: Digite "bola azul quicando" no gerador
+            </div>
+        </div>
+
+        <div class="categoria-titulo">2. Quadrado Girando</div>
+        <div class="estilo">
+            <h3>🟨 Quadrado Girando</h3>
+            <p class="descricao">Um quadrado amarelo que gira 360° continuamente.</p>
+            <div class="code-block">width: 60px;
+height: 60px;
+background: linear-gradient(45deg, #fbbf24, #f59e0b);
+animation: girar 2s linear infinite;
+box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">3. Bola Pulsante</div>
+        <div class="estilo">
+            <h3>💓 Bola Pulsante</h3>
+            <p class="descricao">Uma bola vermelha que pulsa aumentando e diminuindo de tamanho.</p>
+            <div class="code-block">width: 50px;
+height: 50px;
+background: radial-gradient(circle, #ef4444, #dc2626);
+border-radius: 50%;
+animation: pulsar 1.5s ease-in-out infinite;
+box-shadow: 0 0 30px rgba(239, 68, 68, 0.6);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">4. Onda de Movimento</div>
+        <div class="estilo">
+            <h3>〰️ Onda de Movimento</h3>
+            <p class="descricao">Elemento que se move em padrão ondulado horizontal.</p>
+            <div class="code-block">width: 40px;
+height: 40px;
+background: radial-gradient(circle, #06b6d4, #0891b2);
+border-radius: 50%;
+animation: onda 2s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">5. Ondulação</div>
+        <div class="estilo">
+            <h3>〜 Ondulação Suave</h3>
+            <p class="descricao">Animação que simula ondulação vertical suave.</p>
+            <div class="code-block">width: 50px;
+height: 50px;
+background: linear-gradient(135deg, #8b5cf6, #a855f7);
+border-radius: 50%;
+animation: ondular 1.2s ease-in-out infinite;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 2: EFEITOS HOVER -->
+    <div class="secao">
+        <h2>✋ Efeitos Hover</h2>
+
+        <div class="categoria-titulo">6. Botão Hover</div>
+        <div class="estilo">
+            <h3>🖱️ Botão com Hover Interativo</h3>
+            <p class="descricao">Botão que muda cor ao passar o mouse, com sombra flutuante.</p>
+            <div class="code-block">padding: 12px 30px;
+background: #22c55e;
+color: white;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+
+:hover {
+    background: #16a34a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
+}
+            </div>
+        </div>
+
+        <div class="categoria-titulo">7. Escala ao Hover</div>
+        <div class="estilo">
+            <h3>📏 Elemento que Cresce</h3>
+            <p class="descricao">Elemento que aumenta de tamanho quando você passa o mouse.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: linear-gradient(135deg, #ec4899, #db2777);
+border-radius: 12px;
+transition: transform 0.3s ease;
+
+:hover {
+    transform: scale(1.2);
+}
+            </div>
+        </div>
+
+        <div class="categoria-titulo">8. Sombra Hover</div>
+        <div class="estilo">
+            <h3>👤 Efeito de Sombra</h3>
+            <p class="descricao">Elemento que ganha profundidade com sombra ao passar o mouse.</p>
+            <div class="code-block">padding: 20px;
+background: #1a1a1f;
+border-radius: 8px;
+transition: box-shadow 0.3s ease;
+border: 1px solid #27272a;
+
+:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 3: EFEITOS DE TEXTO -->
+    <div class="secao">
+        <h2>🔤 Efeitos de Texto</h2>
+
+        <div class="categoria-titulo">9. Texto Gradiente</div>
+        <div class="estilo">
+            <h3>🎨 Texto com Gradiente</h3>
+            <p class="descricao">Texto com cores em gradiente linear.</p>
+            <div class="code-block">font-size: 32px;
+font-weight: bold;
+background: linear-gradient(90deg, #ff6b6b, #4a9eff, #22c55e);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">10. Texto Brilhante</div>
+        <div class="estilo">
+            <h3>✨ Texto Brilhando</h3>
+            <p class="descricao">Texto que pulsa com brilho animado.</p>
+            <div class="code-block">font-size: 28px;
+color: #fbbf24;
+text-shadow: 0 0 10px #fbbf24, 0 0 20px #f59e0b;
+animation: brilhar 1.5s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">11. Texto Sombra</div>
+        <div class="estilo">
+            <h3>🌑 Texto com Sombra Profunda</h3>
+            <p class="descricao">Texto com efeito 3D usando múltiplas sombras.</p>
+            <div class="code-block">font-size: 36px;
+font-weight: bold;
+color: #fafafa;
+text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.8),
+             2px 2px 10px rgba(0, 0, 0, 0.5);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">12. Texto Neon</div>
+        <div class="estilo">
+            <h3>💡 Texto Neon</h3>
+            <p class="descricao">Texto com efeito neon cyberpunk.</p>
+            <div class="code-block">font-size: 28px;
+color: #00ff00;
+text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+animation: mudaCor 3s ease-in-out infinite;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 4: GRADIENTES -->
+    <div class="secao">
+        <h2>🌈 Gradientes</h2>
+
+        <div class="categoria-titulo">13. Gradiente Fundo</div>
+        <div class="estilo">
+            <h3>🎨 Gradiente Linear</h3>
+            <p class="descricao">Fundo com gradiente suave de cores.</p>
+            <div class="code-block">background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+width: 100%;
+height: 150px;
+border-radius: 12px;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">14. Transição Suave</div>
+        <div class="estilo">
+            <h3>〰️ Gradiente com Transição</h3>
+            <p class="descricao">Gradiente que muda de cor continuamente.</p>
+            <div class="code-block">background: linear-gradient(45deg, #ff6b6b, #4a9eff, #22c55e, #ff6b6b);
+background-size: 200% 200%;
+animation: gradientShift 8s ease infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">15. Gradiente Espelhado</div>
+        <div class="estilo">
+            <h3>🔄 Gradiente Radial</h3>
+            <p class="descricao">Gradiente que irradia do centro.</p>
+            <div class="code-block">background: radial-gradient(circle at 30% 30%, 
+                         #ff6b6b 0%, 
+                         #4a9eff 50%, 
+                         #000 100%);
+width: 150px;
+height: 150px;
+border-radius: 50%;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 5: SOMBRAS -->
+    <div class="secao">
+        <h2>👥 Sombras e Profundidade</h2>
+
+        <div class="categoria-titulo">16. Sombra Flutuante</div>
+        <div class="estilo">
+            <h3>⬆️ Elemento Flutuante</h3>
+            <p class="descricao">Elemento com sombra que o faz parecer flutuar.</p>
+            <div class="code-block">padding: 20px;
+background: linear-gradient(135deg, #667eea, #764ba2);
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4),
+            0 1px 3px rgba(0, 0, 0, 0.12);
+animation: flutuar 3s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">17. Sombra Profunda</div>
+        <div class="estilo">
+            <h3>🕳️ Sombra Intensa</h3>
+            <p class="descricao">Sombra muito marcada criando profundidade extrema.</p>
+            <div class="code-block">padding: 30px;
+background: #1a1a1f;
+border-radius: 12px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8),
+            0 0 40px rgba(0, 0, 0, 0.6);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">18. Sombra Interna</div>
+        <div class="estilo">
+            <h3>↙️ Sombra Interna</h3>
+            <p class="descricao">Sombra dentro do elemento criando efeito de depressão.</p>
+            <div class="code-block">width: 100px;
+height: 100px;
+background: #22c55e;
+border-radius: 12px;
+box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 6: NEON -->
+    <div class="secao">
+        <h2>💡 Efeitos Neon</h2>
+
+        <div class="categoria-titulo">19. Efeito Neon</div>
+        <div class="estilo">
+            <h3>⚡ Neon Padrão</h3>
+            <p class="descricao">Efeito neon clássico com luz brilhante.</p>
+            <div class="code-block">width: 100px;
+height: 100px;
+background: #0f0;
+border-radius: 50%;
+box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
+animation: brilhar 1.5s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">20. Neon Rosa</div>
+        <div class="estilo">
+            <h3>💗 Neon Rosa Vibrante</h3>
+            <p class="descricao">Neon em tons de rosa e magenta.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: #ff006e;
+border-radius: 50%;
+box-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e, 0 0 30px #ff006e;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">21. Neon Azul</div>
+        <div class="estilo">
+            <h3>💙 Neon Azul Intenso</h3>
+            <p class="descricao">Neon em tons de azul cibernético.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: #00d4ff;
+border-radius: 50%;
+box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 7: CARTÕES -->
+    <div class="secao">
+        <h2>🎴 Cartões (Cards)</h2>
+
+        <div class="categoria-titulo">22. Cartão Moderno</div>
+        <div class="estilo">
+            <h3>🖼️ Cartão com Design Moderno</h3>
+            <p class="descricao">Cartão com gradiente e sombra elegante.</p>
+            <div class="code-block">padding: 25px;
+background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+border: 1px solid rgba(34, 197, 94, 0.3);
+border-radius: 12px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(10px);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">23. Cartão Simples</div>
+        <div class="estilo">
+            <h3>📄 Cartão Minimalista</h3>
+            <p class="descricao">Cartão limpo e simples com borda.</p>
+            <div class="code-block">padding: 20px;
+background: #1a1a1f;
+border: 2px solid #27272a;
+border-radius: 8px;
+transition: all 0.3s ease;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">24. Cartão com Borda</div>
+        <div class="estilo">
+            <h3>📌 Cartão com Destaque</h3>
+            <p class="descricao">Cartão com borda colorida em destaque.</p>
+            <div class="code-block">padding: 20px;
+background: #141419;
+border-left: 4px solid #22c55e;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 8: FORMAS -->
+    <div class="secao">
+        <h2>🎯 Arcos e Formas</h2>
+
+        <div class="categoria-titulo">25. Arco-Íris</div>
+        <div class="estilo">
+            <h3>🌈 Padrão Arco-Íris</h3>
+            <p class="descricao">Gradiente com todas as cores do arco-íris.</p>
+            <div class="code-block">width: 120px;
+height: 120px;
+background: conic-gradient(from 0deg, 
+    red, yellow, lime, cyan, blue, magenta, red);
+border-radius: 50%;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">26. Espiral Giratória</div>
+        <div class="estilo">
+            <h3>🌀 Espiral Animada</h3>
+            <p class="descricao">Padrão que simula uma espiral girando.</p>
+            <div class="code-block">width: 100px;
+height: 100px;
+background: 
+    conic-gradient(from 0deg, transparent 0deg 90deg, #4a9eff 90deg);
+border-radius: 50%;
+animation: girar 2s linear infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">27. Círculo Pulsante</div>
+        <div class="estilo">
+            <h3>⭕ Círculo com Pulso</h3>
+            <p class="descricao">Círculo que pulsa continuamente.</p>
+            <div class="code-block">width: 60px;
+height: 60px;
+background: radial-gradient(circle, #22c55e, #16a34a);
+border-radius: 50%;
+animation: pulsar 1.5s ease-in-out infinite;
+box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 9: 3D -->
+    <div class="secao">
+        <h2>🎮 3D e Perspectiva</h2>
+
+        <div class="categoria-titulo">28. Cubo 3D</div>
+        <div class="estilo">
+            <h3>📦 Cubo Tridimensional</h3>
+            <p class="descricao">Cubo em perspectiva 3D animado.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: linear-gradient(135deg, #667eea, #764ba2);
+transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
+animation: girar 3s linear infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">29. Flip 3D</div>
+        <div class="estilo">
+            <h3>🔀 Efeito Flip 3D</h3>
+            <p class="descricao">Elemento que vira em 3D continuamente.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: linear-gradient(45deg, #ff6b6b, #ec4899);
+animation: girar 2s linear infinite;
+transform: perspective(1000px) rotateY(360deg);
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 10: PADRÕES -->
+    <div class="secao">
+        <h2>🔲 Padrões</h2>
+
+        <div class="categoria-titulo">30. Padrão Xadrez</div>
+        <div class="estilo">
+            <h3>♟️ Tabuleiro de Xadrez</h3>
+            <p class="descricao">Padrão quadriculado em preto e branco.</p>
+            <div class="code-block">background: 
+    linear-gradient(45deg, #333 25%, transparent 25%, transparent 75%, #333 75%),
+    linear-gradient(45deg, #333 25%, transparent 25%, transparent 75%, #333 75%);
+background-size: 40px 40px;
+background-position: 0 0, 20px 20px;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">31. Padrão Listras</div>
+        <div class="estilo">
+            <h3>📊 Listras Diagonais</h3>
+            <p class="descricao">Padrão com listras diagonais.</p>
+            <div class="code-block">background: 
+    repeating-linear-gradient(45deg, 
+        #22c55e, #22c55e 10px, 
+        #1a1a1f 10px, #1a1a1f 20px);
+            </div>
+        </div>
+
+        <div class="categoria-titulo">32. Padrão Dots</div>
+        <div class="estilo">
+            <h3>• Padrão de Pontos</h3>
+            <p class="descricao">Padrão com bolinhas distribuídas.</p>
+            <div class="code-block">background-image: 
+    radial-gradient(circle, #22c55e 20%, transparent 20%);
+background-size: 30px 30px;
+background-color: #141419;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 11: MAIS ANIMAÇÕES -->
+    <div class="secao">
+        <h2>⚙️ Mais Animações</h2>
+
+        <div class="categoria-titulo">33. Rotação Infinita</div>
+        <div class="estilo">
+            <h3>🔄 Rotação Contínua</h3>
+            <p class="descricao">Elemento que gira infinitamente sem parar.</p>
+            <div class="code-block">width: 60px;
+height: 60px;
+background: linear-gradient(90deg, #4a9eff, #22c55e);
+border-radius: 50%;
+animation: girar 1s linear infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">34. Bounce Infinito</div>
+        <div class="estilo">
+            <h3>⛹️ Bounce Vertical</h3>
+            <p class="descricao">Elemento que quica verticalmente.</p>
+            <div class="code-block">width: 50px;
+height: 50px;
+background: radial-gradient(circle, #ff6b6b, #dc2626);
+border-radius: 50%;
+animation: quicar 0.8s infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">35. Fade In/Out</div>
+        <div class="estilo">
+            <h3>👻 Fade Contínuo</h3>
+            <p class="descricao">Elemento que aparece e desaparece continuamente.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: linear-gradient(135deg, #667eea, #764ba2);
+border-radius: 12px;
+animation: mudaCor 2s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">36. Deslizar</div>
+        <div class="estilo">
+            <h3>➡️ Movimento Deslizante</h3>
+            <p class="descricao">Elemento que desliza horizontalmente.</p>
+            <div class="code-block">width: 60px;
+height: 60px;
+background: #22c55e;
+border-radius: 8px;
+animation: deslizar 2s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">37. Rotação Lenta</div>
+        <div class="estilo">
+            <h3>🌍 Rotação Suave</h3>
+            <p class="descricao">Rotação muito lenta e contínua.</p>
+            <div class="code-block">width: 80px;
+height: 80px;
+background: conic-gradient(red, yellow, lime, cyan, blue);
+border-radius: 50%;
+animation: girar 8s linear infinite;
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 12: EFEITOS ESPECIAIS -->
+    <div class="secao">
+        <h2>✨ Efeitos Especiais</h2>
+
+        <div class="categoria-titulo">38. Brilho Radiante</div>
+        <div class="estilo">
+            <h3>💫 Brilho ao Redor</h3>
+            <p class="descricao">Elemento com efeito de brilho radiante.</p>
+            <div class="code-block">width: 100px;
+height: 100px;
+background: radial-gradient(circle, #fbbf24, transparent);
+border-radius: 50%;
+box-shadow: 0 0 40px #fbbf24, 0 0 80px rgba(251, 191, 36, 0.5);
+animation: brilhar 1.5s ease-in-out infinite;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">39. Efeito Vidro (Glassmorphism)</div>
+        <div class="estilo">
+            <h3>🥃 Efeito Vidro Fosco</h3>
+            <p class="descricao">Elemento com aparência de vidro transparente.</p>
+            <div class="code-block">padding: 25px;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+border-radius: 12px;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">40. Estilo Minimalista</div>
+        <div class="estilo">
+            <h3>⚖️ Design Minimalista</h3>
+            <p class="descricao">Elemento com design limpo e minimalista.</p>
+            <div class="code-block">padding: 20px;
+background: #1a1a1f;
+border: 1px solid #27272a;
+border-radius: 8px;
+box-shadow: none;
+            </div>
+        </div>
+
+        <div class="categoria-titulo">41. Estilo Geométrico</div>
+        <div class="estilo">
+            <h3>◆ Padrões Geométricos</h3>
+            <p class="descricao">Elemento com formas geométricas.</p>
+            <div class="code-block">width: 100px;
+height: 100px;
+background: linear-gradient(135deg, 
+    transparent 25%, #4a9eff 25%, #4a9eff 50%, 
+    transparent 50%, transparent 75%, #4a9eff 75%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #27272a;">
+        <p>
+            <a href="index.html" style="color: #22c55e; text-decoration: none; margin: 0 10px;">← Voltar ao Gerador</a>
+            |
+            <a href="documentacao.html" style="color: #4a9eff; text-decoration: none; margin: 0 10px;">📚 Documentação CSS</a>
+        </p>
+        <p style="color: #71717a; margin-top: 10px;">© 2026 - Gerador de CSS com IA</p>
+    </footer>
+
+</body>
+
+</html>

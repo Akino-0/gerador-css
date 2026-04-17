@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação CSS - Guia Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            background: #09090b;
+            color: #e4e4e7;
+            line-height: 1.8;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #22c55e;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #fafafa;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #22c55e;
+        }
+
+        .subtitle {
+            color: #71717a;
+            font-size: 18px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .secao {
+            background: #141419;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #27272a;
+        }
+
+        h2 {
+            color: #22c55e;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #27272a;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #4a9eff;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #09090b;
+            color: #34d399;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        .code-block {
+            background: #09090b;
+            color: #34d399;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border-left: 4px solid #22c55e;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .categoria {
+            margin-bottom: 40px;
+        }
+
+        .exemplo {
+            background: #1a1a1f;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #27272a;
+        }
+
+        .botao-voltar {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #22c55e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .botao-voltar:hover {
+            background: #16a34a;
+        }
+
+        .dica {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid #22c55e;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .warning {
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 4px solid #ff6b6b;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .grid-propriedades {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .propriedade {
+            background: #1a1a1f;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #27272a;
+        }
+
+        .propriedade strong {
+            color: #4a9eff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .grid-propriedades {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="botao-voltar">← Voltar ao Gerador</a>
+
+    <header>
+        <h1>Documentação CSS <span>Completa</span></h1>
+        <p class="subtitle">Aprenda tudo sobre CSS, animações, gradientes e efeitos</p>
+    </header>
+
+    <div class="container">
+        <!-- SEÇÃO 1: O QUE É CSS -->
+        <div class="secao">
+            <h2>📌 O que é CSS?</h2>
+            <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever como elementos HTML devem ser exibidos. Com CSS você controla:</p>
+            <ul>
+                <li><strong>Cores:</strong> background, color, border</li>
+                <li><strong>Tamanhos:</strong> width, height, padding, margin</li>
+                <li><strong>Posicionamento:</strong> position, display, flexbox</li>
+                <li><strong>Animações:</strong> animation, transition</li>
+                <li><strong>Transformações:</strong> transform, rotate, scale</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 2: CORES -->
+        <div class="secao">
+            <h2>🎨 Cores e Gradientes</h2>
+            <h3>Tipos de Cores:</h3>
+            <div class="grid-propriedades">
+                <div class="propriedade">
+                    <strong>Hexadecimal:</strong> #FF0000
+                </div>
+                <div class="propriedade">
+                    <strong>RGB:</strong> rgb(255, 0, 0)
+                </div>
+                <div class="propriedade">
+                    <strong>RGBA:</strong> rgba(255, 0, 0, 0.5)
+                </div>
+                <div class="propriedade">
+                    <strong>HSL:</strong> hsl(0, 100%, 50%)
+                </div>
+            </div>
+
+            <h3>Gradientes:</h3>
+            <div class="code-block">background: linear-gradient(90deg, red, blue);
+background: radial-gradient(circle, red, blue);
+background: conic-gradient(red, yellow, lime);
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO 3: ANIMAÇÕES -->
+    <div class="secao">
+        <h2>⚡ Animações</h2>
+        <p>As animações CSS criam movimento sem JavaScript!</p>
+
+        <h3>Como criar uma animação:</h3>
+        <div class="code-block">@keyframes nomeAnimacao {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.elemento {
+    animation: nomeAnimacao 1s infinite;
+}
+        </div>
+
+        <h3>Propriedades da Animação:</h3>
+        <div class="grid-propriedades">
+            <div class="propriedade">
+                <strong>animation-name:</strong> Nome da animação
+            </div>
+            <div class="propriedade">
+                <strong>animation-duration:</strong> Tempo (1s, 2s)
+            </div>
+            <div class="propriedade">
+                <strong>animation-delay:</strong> Atraso inicial
+            </div>
+            <div class="propriedade">
+                <strong>animation-iteration-count:</strong> infinite
+            </div>
+            <div class="propriedade">
+                <strong>animation-direction:</strong> normal, reverse
+            </div>
+            <div class="propriedade">
+                <strong>animation-timing-function:</strong> ease, linear
+            </div>
+        </div>
+
+        <div class="dica">
+            <strong>💡 Dica:</strong> Use <code>animation: slideIn 0.5s ease infinite</code> para aplicar tudo em uma linha!
+        </div>
+    </div>
+
+    <!-- SEÇÃO 4: TRANSFORMAÇÕES -->
+    <div class="secao">
+        <h2>🔄 Transformações (Transform)</h2>
+        <p>Modifique elementos usando rotate, scale, translate e skew:</p>
+
+        <h3>Exemplos práticos:</h3>
+        <div class="code-block">/* Girar */
+transform: rotate(45deg);
+
+/* Aumentar de tamanho */
+transform: scale(1.5);
+
+/* Mover */
+transform: translate(50px, 20px);
+
+/* Combinação */
+transform: rotate(45deg) scale(1.2) translate(10px, 10px);
+        </div>
+
+        <div class="grid-propriedades">
+            <div class="propriedade">
+                <strong>rotate():</strong> Girar em graus
+            </div>
+            <div class="propriedade">
+                <strong>scale():</strong> Aumentar/diminuir
+            </div>
+            <div class="propriedade">
+                <strong>translate():</strong> Mover X e Y
+            </div>
+            <div class="propriedade">
+                <strong>skew():</strong> Inclinar elemento
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO 5: TRANSIÇÕES -->
+    <div class="secao">
+        <h2>⏱️ Transições (Transition)</h2>
+        <p>Crie mudanças suaves entre estados:</p>
+
+        <div class="code-block">.botao {
+    background: blue;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background: red;
+}
+        </div>
+
+        <h3>Propriedades:</h3>
+        <ul>
+            <li><code>transition-property:</code> Qual propriedade animar (all, background, etc)</li>
+            <li><code>transition-duration:</code> Tempo (0.3s, 1s)</li>
+            <li><code>transition-timing-function:</code> ease, linear, ease-in, ease-out</li>
+            <li><code>transition-delay:</code> Atraso (opcional)</li>
+        </ul>
+
+        <div class="dica">
+            <strong>💡 Dica:</strong> Use <code>transition: all 0.3s ease</code> para animar todas as propriedades!
+        </div>
+    </div>
+
+    <!-- SEÇÃO 6: BOX SHADOW -->
+    <div class="secao">
+        <h2>👥 Sombras (Box Shadow)</h2>
+        <p>Adicione profundidade com sombras:</p>
+
+        <div class="code-block">/* Sintaxe: offset-x, offset-y, blur, spread, color */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+/* Múltiplas sombras */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+            0 8px 16px rgba(0, 0, 0, 0.2);
+
+/* Sombra interna */
+box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+        </div>
+    </div>
+
+    <!-- SEÇÃO 7: GRADIENTES -->
+    <div class="secao">
+        <h2>🌈 Gradientes Detalhados</h2>
+
+        <h3>Linear Gradient:</h3>
+        <div class="code-block">/* Horizontal */
+background: linear-gradient(90deg, red, blue);
+
+/* Vertical */
+background: linear-gradient(180deg, red, blue);
+
+/* Diagonal */
+background: linear-gradient(45deg, red, blue);
+
+/* Múltiplas cores */
+background: linear-gradient(90deg, red, yellow, green, blue);
+        </div>
+
+        <h3>Radial Gradient:</h3>
+        <div class="code-block">/* Círculo */
+background: radial-gradient(circle, red, blue);
+
+/* Elipse */
+background: radial-gradient(ellipse, red, blue);
+
+/* Posição customizada */
+background: radial-gradient(circle at 30% 30%, red, blue);
+        </div>
+    </div>
+
+    <!-- SEÇÃO 8: EFEITOS ESPECIAIS -->
+    <div class="secao">
+        <h2>✨ Efeitos Especiais</h2>
+
+        <h3>Text Shadow:</h3>
+        <div class="code-block">text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+text-shadow: 0 0 20px #00ff00;
+        </div>
+
+        <h3>Filter:</h3>
+        <div class="code-block">filter: blur(5px);
+filter: brightness(1.2);
+filter: contrast(1.5);
+filter: grayscale(100%);
+filter: hue-rotate(90deg);
+        </div>
+
+        <h3>Clip Path (Formas):</h3>
+        <div class="code-block">/* Triângulo */
+clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+/* Estrela */
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        </div>
+    </div>
+
+    <!-- SEÇÃO 9: FLEXBOX -->
+    <div class="secao">
+        <h2>📦 Flexbox (Layout)</h2>
+        <p>Sistema moderno de layout em uma dimensão:</p>
+
+        <div class="code-block">.container {
+    display: flex;
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;           /* Centra verticalmente */
+    flex-direction: column;        /* Muda para coluna */
+    gap: 20px;                    /* Espaço entre elementos */
+}
+        </div>
+
+        <div class="grid-propriedades">
+            <div class="propriedade">
+                <strong>justify-content:</strong> flex-start, center, space-between
+            </div>
+            <div class="propriedade">
+                <strong>align-items:</strong> flex-start, center, stretch
+            </div>
+            <div class="propriedade">
+                <strong>flex-direction:</strong> row, column
+            </div>
+            <div class="propriedade">
+                <strong>flex-wrap:</strong> wrap, nowrap
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO 10: GRID -->
+    <div class="secao">
+        <h2>📊 CSS Grid (Layout 2D)</h2>
+        <p>Sistema avançado para layouts complexos:</p>
+
+        <div class="code-block">.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* 3 colunas iguais */
+    grid-template-rows: 100px 200px;     /* 2 linhas */
+    gap: 20px;                            /* Espaço entre itens */
+}
+        </div>
+    </div>
+
+    <!-- SEÇÃO 11: PROPRIEDADES COMUNS -->
+    <div class="secao">
+        <h2>📋 Propriedades CSS Essenciais</h2>
+
+        <div class="grid-propriedades">
+            <div class="propriedade">
+                <strong>width:</strong> 100px, 50%, auto
+            </div>
+            <div class="propriedade">
+                <strong>height:</strong> 100px, 50%, auto
+            </div>
+            <div class="propriedade">
+                <strong>padding:</strong> Espaço interno
+            </div>
+            <div class="propriedade">
+                <strong>margin:</strong> Espaço externo
+            </div>
+            <div class="propriedade">
+                <strong>border:</strong> 2px solid #000
+            </div>
+            <div class="propriedade">
+                <strong>border-radius:</strong> 10px (arredondar)
+            </div>
+            <div class="propriedade">
+                <strong>background:</strong> Cor ou imagem
+            </div>
+            <div class="propriedade">
+                <strong>color:</strong> Cor do texto
+            </div>
+            <div class="propriedade">
+                <strong>font-size:</strong> 16px, 1.5em
+            </div>
+            <div class="propriedade">
+                <strong>font-weight:</strong> bold, 700
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO 12: DICAS E TRUQUES -->
+    <div class="secao">
+        <h2>💡 Dicas e Truques</h2>
+
+        <h3>1. Centralize tudo com Flexbox:</h3>
+        <div class="code-block">.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+        </div>
+
+        <h3>2. Efeito de Hover Suave:</h3>
+        <div class="code-block">.elemento {
+    transition: all 0.3s ease;
+}
+
+.elemento:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+        </div>
+
+        <h3>3. Criando Padrões:</h3>
+        <div class="code-block">/* Xadrez */
+background: linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%),
+            linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%);
+background-size: 20px 20px;
+background-position: 0 0, 10px 10px;
+        </div>
+
+        <div class="dica">
+            <strong>💡 Lembre-se:</strong> Teste seu CSS em diferentes navegadores para garantir compatibilidade!
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Aviso:</strong> Algumas propriedades podem não funcionar em navegadores antigos. Use prefixos como <code>-webkit-</code>, <code>-moz-</code> quando necessário.
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #27272a;">
+        <p>
+            <a href="index.html" style="color: #22c55e; text-decoration: none; margin: 0 10px;">← Voltar ao Gerador</a>
+            |
+            <a href="estilos-lista.html" style="color: #4a9eff; text-decoration: none; margin: 0 10px;">📋 Ver Lista de Estilos</a>
+        </p>
+        <p style="color: #71717a; margin-top: 10px;">Criado com ❤️ para Web Designers e Desenvolvedores</p>
+        <p style="color: #71717a;">© 2026 - Gerador de CSS com IA</p>
+    </footer>
+
+</body>
+
+</html>
