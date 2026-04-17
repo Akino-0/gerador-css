@@ -1,18 +1,33 @@
 # 🎨 Gerador de CSS
 
-Um gerador de estilos CSS com mais de **40 opções prontas** para deixar seus projetos mais bonitos de forma rápida e prática.
+Um gerador de estilos CSS com mais de **40 opções prontas**, direto no navegador.
 
 ---
 
-## 🚀 Sobre o projeto
+## 🌐 Acesse o projeto
 
-Este projeto foi criado com o objetivo de facilitar a criação de estilos CSS, permitindo gerar códigos prontos sem precisar escrever tudo manualmente.
-
-Ideal para quem está aprendendo ou quer agilizar o desenvolvimento front-end.
+👉 https://Akino-0.github.io/gerador-css/
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🚀 Sobre
+
+Este projeto permite gerar estilos CSS de forma rápida e prática, sem precisar escrever código manualmente.
+
+Ideal para quem quer agilizar o front-end ou testar estilos facilmente.
+
+---
+
+## ⚙️ Como usar
+
+1. Acesse o site pelo link acima
+2. Escolha o estilo desejado
+3. Copie o CSS gerado
+4. Use no seu projeto
+
+---
+
+## 🛠️ Tecnologias
 
 * HTML5
 * CSS3
@@ -20,43 +35,19 @@ Ideal para quem está aprendendo ou quer agilizar o desenvolvimento front-end.
 
 ---
 
-## ⚙️ Como usar
+## 📌 Status
 
-1. Baixe ou clone o projeto
-2. Abra o arquivo `index.html` no navegador
-3. Escolha o estilo desejado
-4. Copie o CSS gerado e use no seu projeto
-
----
-
-## 📂 Estrutura do projeto
-
-* `index.html` → Página principal
-* `documentacao.html` → Explicações do projeto
-* `estilos-lista.html` → Lista de estilos
-* `styles.css` / `estilo.css` → Estilização
-* `scripts.js` → Funcionalidades
-
----
-
-## 💡 Objetivo
-
-Ajudar desenvolvedores a criarem interfaces mais bonitas de forma simples e rápida.
-
----
-
-## 📌 Status do projeto
-
-✅ Finalizado / Em melhorias futuras com adição de I.A
+🚧 Em beta e em desenvolvimento
+💡 Futuramente será adicionada integração com IA para gerar estilos ainda mais avançados
 
 ---
 
 ## 👨‍💻 Autor
 
-Feito por Kaio Vitor 😎
+Feito por Kaio 😎
 
 ---
 
 ## ⭐ Dica
 
-Se curtir o projeto, deixa uma estrela no repositório!
+Se curtir, deixa uma estrela no repositório!
